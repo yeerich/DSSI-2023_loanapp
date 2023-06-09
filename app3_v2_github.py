@@ -16,7 +16,7 @@ with open('model.pkl', "rb") as f:
 # Streamlit provides a caching mechanism that allows your app to stay performant 
 # even when loading data from the web, manipulating large datasets, 
 # or performing expensive computations. This is done with the @st.cache decorator.
-@st.cache()
+@st.cache_data()
 
 def prediction(int_rate, emp_length, annual_inc, delinq_2yrs, fico_range_high,revol_bal, open_acc):
 	# Making predictions
